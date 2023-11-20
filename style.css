@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(237, 234, 229);
+}
+
+header {
+    width: 100%;
+    background-color: rgb(192, 192, 192);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    margin: 25px;
+    text-align: center;
+}
+
+.createEvent, .editEvent, .viewEvent{
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+    
+}
+    
+
+form:not(button .delete) {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+textarea,
+input[type="date"] {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.viewEvent div {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+.delete {
+    background-color: rgb(159, 1, 1);
+}
+
+.delete:hover {
+    background-color: rgb(113, 4, 4);
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+.home {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid #4caf50;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.overviewEvents {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.events {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.eventTable {
+    width: 32%;
+    margin-bottom: 15px;
+}
+
+.event-card {
+    width: 18rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 15px;
+    background-color: white;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    margin-top: 7px;
+}
+
+.card-text {
+    margin-bottom: 10px;
+}
+
+.card-date {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.user-greeting {
+    text-align: center;
+    margin: 20px;
+}
+
+.logout {
+    margin-right: 25px;
+}
+
+.loginForm, .registrationForm{
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+}
+
+form input[type="email"],
+form input[type="text"],
+form input[type="password"] {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+form input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.registration, .login {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.registration a, .login a {
+    text-decoration: none;
+    color: #4caf50;
+    font-weight: 600;
+}
+.newEvent{
+ text-align: right;
+}
+.date {
+    text-decoration: underline;
+}
